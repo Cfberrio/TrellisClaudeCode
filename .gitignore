@@ -1,0 +1,10 @@
+.env
+.venv/
+**/.DS_Store
+.cursor/
+.playwright-mcp/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+domains/ops/social-metrics/

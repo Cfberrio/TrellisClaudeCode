@@ -1,0 +1,13 @@
+[project]
+id = ""
+name = "dr-social-automation"
+
+[api]
+enabled = true
+port = 54321
+
+[db]
+port = 54322
+
+[functions]
+verify_jwt = false
