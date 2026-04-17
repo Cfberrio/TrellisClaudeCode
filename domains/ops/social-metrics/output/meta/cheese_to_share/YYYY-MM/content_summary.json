@@ -1,0 +1,37 @@
+{
+  "brand": "cheese_to_share",
+  "display_name": "Cheese To Share",
+  "report_period": {
+    "start": null,
+    "end": null
+  },
+  "facebook": {
+    "posts_published": null,
+    "total_impressions": null,
+    "total_reach": null,
+    "total_likes": null,
+    "total_comments": null,
+    "total_shares": null,
+    "avg_engagement_rate": null,
+    "best_performing_type": null
+  },
+  "instagram": {
+    "posts_published": null,
+    "reels_published": null,
+    "stories_published": null,
+    "total_impressions": null,
+    "total_reach": null,
+    "total_likes": null,
+    "total_comments": null,
+    "total_saves": null,
+    "avg_engagement_rate": null,
+    "best_performing_type": null
+  },
+  "consolidated": {
+    "total_posts": null,
+    "total_impressions": null,
+    "total_reach": null,
+    "avg_engagement_rate": null,
+    "top_content_type": null
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "brand": "dr_volleyball_club",
+  "display_name": "DR Volleyball Club",
+  "month": "2026-04",
+  "date_range": {
+    "start": "2026-04-01",
+    "end": "2026-04-30"
+  },
+  "facebook": {
+    "page_id": "656042314259084",
+    "page_name": "DR Volleyball Club",
+    "followers": 6,
+    "fan_count": 6,
+    "reach": null,
+    "impressions": null,
+    "engaged_users": null,
+    "impressions_unique": null,
+    "fan_adds": null
+  },
+  "instagram": {
+    "ig_id": "17841462474438763",
+    "username": "drvolleyballclub",
+    "followers": 81,
+    "follows": 28,
+    "media_count": 40,
+    "monthly_reach": 18
+  },
+  "consolidated": {
+    "total_followers": 87,
+    "total_reach": 18
+  }
+}

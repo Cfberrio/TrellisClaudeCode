@@ -1,0 +1,32 @@
+{
+  "brand": "discipline_rift",
+  "display_name": "Discipline Rift",
+  "month": "2026-04",
+  "date_range": {
+    "start": "2026-04-01",
+    "end": "2026-04-30"
+  },
+  "facebook": {
+    "page_id": "120773174290094",
+    "page_name": "Discipline Rift",
+    "followers": 13,
+    "fan_count": 13,
+    "reach": null,
+    "impressions": null,
+    "engaged_users": null,
+    "impressions_unique": null,
+    "fan_adds": null
+  },
+  "instagram": {
+    "ig_id": "17841446001597184",
+    "username": "disciplinerift",
+    "followers": 269,
+    "follows": 17,
+    "media_count": 112,
+    "monthly_reach": 1013
+  },
+  "consolidated": {
+    "total_followers": 282,
+    "total_reach": 1013
+  }
+}

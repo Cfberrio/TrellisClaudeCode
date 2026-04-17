@@ -1,0 +1,25 @@
+{
+  "brand": "discipline_rift",
+  "month": "2026-04",
+  "facebook": {
+    "posts_published": 3,
+    "total_likes": 0,
+    "total_comments": 0,
+    "total_shares": null,
+    "total_reach": null,
+    "avg_engagement_rate": null
+  },
+  "instagram": {
+    "posts_published": 2,
+    "reels_published": 7,
+    "total_likes": 54,
+    "total_comments": 7,
+    "total_saves": 1,
+    "total_reach": 1052,
+    "avg_engagement_rate": 0.0746
+  },
+  "consolidated": {
+    "total_posts": 12,
+    "total_reach": 1052
+  }
+}

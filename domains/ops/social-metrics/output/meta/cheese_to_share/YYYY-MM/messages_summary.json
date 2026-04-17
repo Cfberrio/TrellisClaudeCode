@@ -1,0 +1,21 @@
+{
+  "brand": "cheese_to_share",
+  "display_name": "Cheese To Share",
+  "report_period": {
+    "start": null,
+    "end": null
+  },
+  "platform": "facebook",
+  "note": "Instagram DM metrics require Instagram Graph API Business access. Facebook only for initial implementation.",
+  "facebook": {
+    "conversations_total": null,
+    "messages_received": null,
+    "messages_sent": null,
+    "avg_response_time_hrs": null,
+    "unanswered_conversations": null
+  },
+  "instagram": {
+    "status": "pending",
+    "note": "Requires Instagram API messaging permissions. Not active in Phase 1."
+  }
+}

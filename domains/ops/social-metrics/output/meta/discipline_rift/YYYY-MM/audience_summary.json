@@ -1,0 +1,19 @@
+{
+  "brand": "discipline_rift",
+  "display_name": "Discipline Rift",
+  "report_period": {
+    "start": null,
+    "end": null
+  },
+  "facebook": {
+    "top_cities": [],
+    "top_countries": [],
+    "age_gender": {}
+  },
+  "instagram": {
+    "top_cities": [],
+    "top_countries": [],
+    "age_gender": {}
+  },
+  "notes": null
+}

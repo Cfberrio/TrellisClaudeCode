@@ -1,0 +1,47 @@
+{
+  "platforms": [
+    {
+      "id": "facebook",
+      "display_name": "Facebook",
+      "api_version": "v19.0",
+      "active": true,
+      "base_url": "https://graph.facebook.com",
+      "scopes": [
+        "pages_read_engagement",
+        "pages_show_list",
+        "read_insights",
+        "pages_messaging"
+      ],
+      "rate_limits": {
+        "calls_per_hour": 200,
+        "note": "Subject to Meta Graph API tier limits per app"
+      }
+    },
+    {
+      "id": "instagram",
+      "display_name": "Instagram",
+      "api_version": "v19.0",
+      "active": true,
+      "base_url": "https://graph.facebook.com",
+      "scopes": [
+        "instagram_basic",
+        "instagram_manage_insights",
+        "pages_show_list"
+      ],
+      "rate_limits": {
+        "calls_per_hour": 200,
+        "note": "Instagram Basic Display API shares Meta rate limit tier"
+      }
+    },
+    {
+      "id": "tiktok",
+      "display_name": "TikTok",
+      "api_version": null,
+      "active": false,
+      "base_url": null,
+      "scopes": [],
+      "rate_limits": {},
+      "note": "Reserved for future integration. Not active in current pipeline."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "brand": "discipline_rift",
+  "display_name": "Discipline Rift",
+  "report_period": {
+    "start": null,
+    "end": null
+  },
+  "ranking_metric": "engagement_rate",
+  "top_posts": [
+    { "rank": 1, "post_id": null, "platform": null, "type": null, "published_at": null, "permalink": null, "thumbnail_url": null, "caption_snippet": null, "metrics": { "impressions": null, "reach": null, "likes": null, "comments": null, "shares": null, "saves": null, "engagement_rate": null } },
+    { "rank": 2, "post_id": null, "platform": null, "type": null, "published_at": null, "permalink": null, "thumbnail_url": null, "caption_snippet": null, "metrics": { "impressions": null, "reach": null, "likes": null, "comments": null, "shares": null, "saves": null, "engagement_rate": null } },
+    { "rank": 3, "post_id": null, "platform": null, "type": null, "published_at": null, "permalink": null, "thumbnail_url": null, "caption_snippet": null, "metrics": { "impressions": null, "reach": null, "likes": null, "comments": null, "shares": null, "saves": null, "engagement_rate": null } },
+    { "rank": 4, "post_id": null, "platform": null, "type": null, "published_at": null, "permalink": null, "thumbnail_url": null, "caption_snippet": null, "metrics": { "impressions": null, "reach": null, "likes": null, "comments": null, "shares": null, "saves": null, "engagement_rate": null } },
+    { "rank": 5, "post_id": null, "platform": null, "type": null, "published_at": null, "permalink": null, "thumbnail_url": null, "caption_snippet": null, "metrics": { "impressions": null, "reach": null, "likes": null, "comments": null, "shares": null, "saves": null, "engagement_rate": null } }
+  ]
+}

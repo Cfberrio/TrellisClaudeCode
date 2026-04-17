@@ -1,0 +1,16 @@
+{
+  "brand": "dr_volleyball_club",
+  "month": "2026-04",
+  "facebook": {
+    "followers_end_of_period": 6,
+    "fan_count": 6,
+    "fan_adds_in_period": null,
+    "demographics": null
+  },
+  "instagram": {
+    "followers_end_of_period": 81,
+    "follows_count": 28,
+    "demographics": null
+  },
+  "note": "Audience demographics (age, gender, location) require additional API permissions not available in Phase 1."
+}

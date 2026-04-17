@@ -1,0 +1,12 @@
+{
+  "brand": "dr_volleyball_club",
+  "month": "2026-04",
+  "facebook": {
+    "status": "pending",
+    "note": "Facebook inbox metrics require pages_messaging permission with additional setup. Planned for Phase 2."
+  },
+  "instagram": {
+    "status": "pending",
+    "note": "Instagram DM metrics require business_management permission. Planned for Phase 2."
+  }
+}

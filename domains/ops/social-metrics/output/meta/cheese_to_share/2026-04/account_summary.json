@@ -1,0 +1,32 @@
+{
+  "brand": "cheese_to_share",
+  "display_name": "Cheese To Share",
+  "month": "2026-04",
+  "date_range": {
+    "start": "2026-04-01",
+    "end": "2026-04-30"
+  },
+  "facebook": {
+    "page_id": "101596857874204",
+    "page_name": "Cheese To Share",
+    "followers": 1183,
+    "fan_count": 1183,
+    "reach": null,
+    "impressions": null,
+    "engaged_users": null,
+    "impressions_unique": null,
+    "fan_adds": null
+  },
+  "instagram": {
+    "ig_id": "17841418188773611",
+    "username": "cheesetoshare",
+    "followers": 8566,
+    "follows": 1432,
+    "media_count": 310,
+    "monthly_reach": 6700
+  },
+  "consolidated": {
+    "total_followers": 9749,
+    "total_reach": 6700
+  }
+}

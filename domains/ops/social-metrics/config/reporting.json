@@ -1,0 +1,35 @@
+{
+  "reporting": {
+    "default_period": "monthly",
+    "lookback_days": 30,
+    "output_formats": ["json", "csv", "md"],
+    "date_format": "YYYY-MM-DD",
+    "metrics_precision": 2,
+    "engagement_rate_basis": "reach",
+    "top_content": {
+      "posts_per_brand": 5,
+      "ranking_metric": "engagement_rate",
+      "include_platforms": ["facebook", "instagram"]
+    },
+    "thresholds": {
+      "engagement_rate_low": 0.01,
+      "engagement_rate_good": 0.03,
+      "engagement_rate_excellent": 0.06,
+      "follower_growth_low": 0.005,
+      "follower_growth_good": 0.02
+    },
+    "monthly_analysis": {
+      "sections": [
+        "executive_summary",
+        "cross_platform_snapshot",
+        "facebook_summary",
+        "instagram_summary",
+        "top_content_across_meta",
+        "audience_signals",
+        "messaging_inbox_signals",
+        "key_takeaways",
+        "recommended_next_steps"
+      ]
+    }
+  }
+}

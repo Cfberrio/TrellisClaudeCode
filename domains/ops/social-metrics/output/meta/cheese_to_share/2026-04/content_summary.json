@@ -1,0 +1,25 @@
+{
+  "brand": "cheese_to_share",
+  "month": "2026-04",
+  "facebook": {
+    "posts_published": 10,
+    "total_likes": 7,
+    "total_comments": 0,
+    "total_shares": null,
+    "total_reach": null,
+    "avg_engagement_rate": null
+  },
+  "instagram": {
+    "posts_published": 2,
+    "reels_published": 10,
+    "total_likes": 259,
+    "total_comments": 15,
+    "total_saves": 4,
+    "total_reach": 4835,
+    "avg_engagement_rate": 0.0586
+  },
+  "consolidated": {
+    "total_posts": 22,
+    "total_reach": 4835
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "brands": [
+    {
+      "id": "cheese_to_share",
+      "display_name": "Cheese To Share",
+      "slug": "cheese_to_share",
+      "active": true,
+      "meta": {
+        "page_id_env":          "SOCIAL_METRICS_CHEESE_TO_SHARE_PAGE_ID",
+        "page_token_env":       "SOCIAL_METRICS_CHEESE_TO_SHARE_PAGE_ACCESS_TOKEN",
+        "ig_id_env":            "SOCIAL_METRICS_CHEESE_TO_SHARE_IG_ID",
+        "facebook_page_name":   null,
+        "instagram_handle":     null
+      },
+      "reporting": {
+        "primary_contact": null,
+        "timezone": "America/New_York",
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "discipline_rift",
+      "display_name": "Discipline Rift",
+      "slug": "discipline_rift",
+      "active": true,
+      "meta": {
+        "page_id_env":          "SOCIAL_METRICS_DISCIPLINE_RIFT_PAGE_ID",
+        "page_token_env":       "SOCIAL_METRICS_DISCIPLINE_RIFT_PAGE_ACCESS_TOKEN",
+        "ig_id_env":            "SOCIAL_METRICS_DISCIPLINE_RIFT_IG_ID",
+        "facebook_page_name":   null,
+        "instagram_handle":     null
+      },
+      "reporting": {
+        "primary_contact": null,
+        "timezone": "America/New_York",
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "dr_volleyball_club",
+      "display_name": "DR Volleyball Club",
+      "slug": "dr_volleyball_club",
+      "active": true,
+      "meta": {
+        "page_id_env":          "SOCIAL_METRICS_DR_VOLLEYBALL_CLUB_PAGE_ID",
+        "page_token_env":       "SOCIAL_METRICS_DR_VOLLEYBALL_CLUB_PAGE_ACCESS_TOKEN",
+        "ig_id_env":            "SOCIAL_METRICS_DR_VOLLEYBALL_CLUB_IG_ID",
+        "facebook_page_name":   null,
+        "instagram_handle":     null
+      },
+      "reporting": {
+        "primary_contact": null,
+        "timezone": "America/New_York",
+        "currency": "USD"
+      }
+    }
+  ]
+}

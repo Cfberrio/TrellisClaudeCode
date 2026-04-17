@@ -6,5 +6,3 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-
-domains/ops/social-metrics/
