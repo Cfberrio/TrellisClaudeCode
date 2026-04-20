@@ -1,4 +1,7 @@
 {
   "projectName": "trellis-workspace",
-  "description": "Multi-domain workspace for Trellis — ads, ops, content pipelines"
+  "description": "Multi-domain workspace for Trellis — ads, ops, content pipelines",
+  "enabledPlugins": {
+    "marketing-skills@marketingskills": true
+  }
 }

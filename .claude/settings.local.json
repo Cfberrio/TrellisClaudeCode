@@ -47,7 +47,15 @@
       "Bash(mkdir -p src/common src/meta/facebook src/meta/instagram src/meta/shared tests/unit/common tests/unit/meta/facebook tests/unit/meta/instagram tests/unit/meta/shared tests/integration scripts/meta)",
       "Bash(touch src/common/__init__.py src/meta/__init__.py src/meta/facebook/__init__.py src/meta/instagram/__init__.py src/meta/shared/__init__.py tests/__init__.py tests/unit/__init__.py tests/unit/common/__init__.py tests/unit/meta/__init__.py tests/unit/meta/facebook/__init__.py tests/unit/meta/instagram/__init__.py tests/unit/meta/shared/__init__.py tests/integration/__init__.py scripts/meta/__init__.py)",
       "Bash(python -c \"from src.config.meta_config import validate_all; validate_all\\(\\); print\\('Config OK'\\)\")",
-      "Bash(python scripts/meta/run_monthly.py --month 2026-04)"
+      "Bash(python scripts/meta/run_monthly.py --month 2026-04)",
+      "Bash(npx create-video@latest)",
+      "Bash(claude plugin:*)",
+      "Bash(npx create-video@latest --help)",
+      "Bash(npx skills *)",
+      "Bash(mv .playwright-mcp/PrivateSchoolList.xls .playwright-mcp/SchoolList.xls .playwright-mcp/ocps_emails.txt .playwright-mcp/ocps_email_page.md \"domains/ops/school-outreach/discipline-rift/data/raw/official/\")",
+      "Bash(mv scripts/run_gaql.py scripts/run_phase1_extract.sh .)",
+      "Bash(mv google_ads_oauth_refresh_token.py scripts/)",
+      "Bash(git add *)"
     ]
   },
   "enableAllProjectMcpServers": true,

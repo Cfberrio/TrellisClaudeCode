@@ -1,0 +1,31 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#skiptocontent"
+  - banner [ref=e3]:
+    - navigation "Main" [ref=e4]:
+      - list [ref=e5]
+    - generic [ref=e56]:
+      - heading "Orange County Public Schools" [level=1] [ref=e59]
+      - list [ref=e61]
+  - main [ref=e82]:
+    - generic [ref=e84]:
+      - navigation "Breadcrumb" [ref=e85]
+      - heading "School Email Addresses" [level=2] [ref=e91]
+    - generic [ref=e94]:
+      - generic [ref=e101]
+      - paragraph [ref=e111]: Orange County Public Schools makes available a school email address for all schools. This email address function can be used by any community member who may not know which specific individual to contact. The email will be automatically sent to the school principal and their designees and will be forwarded to the correct individual for response.
+      - generic [ref=e113]
+      - generic [ref=e2179]
+  - contentinfo [ref=e2252]:
+    - generic [ref=e2253]:
+      - generic [ref=e2255]
+      - generic [ref=e2277]
+    - generic [ref=e2299]:
+      - generic [ref=e2300]: Contents © 2026 Orange County Public Schools
+      - generic [ref=e2301]: "The School Board of Orange County, Florida, does not discriminate in admission or access to, or treatment or employment in its programs and activities, on the basis of race, color, religion, age, sex, national origin, marital status, disability, genetic information, sexual orientation, gender identity or expression, or any other reason prohibited by law. The School Board also provides equal access to Scouting America and other designated youth groups. This holds true for all students who are interested in participating in educational programs and/or extracurricular school activities. The following individuals at the Ronald Blocker Educational Leadership Center, 445 W. Amelia Street, Orlando, Florida 32801, attend to compliance matters: Equal Employment Opportunity (EEO) Officer & Title IX Coordinator: Keshara Cowans; ADA Coordinator: Jay Cardinali; Section 504 Coordinator: Tajuana Lee-Wenze. (407.317.3200)"
+      - list [ref=e2302]
+  - img [ref=e2371]
+  - generic [ref=e2375] [cursor=pointer]:
+    - img "Lets talk logo" [ref=e2376]
+    - link "Contact Us!" [ref=e2377]:
+      - /url: javascript:void(0);

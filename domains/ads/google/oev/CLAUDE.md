@@ -17,7 +17,6 @@ OEV is NOT exclusively corporate/workshops. Corporate/workshops is a strong prio
 - Competitor conquesting is a valid play — do not block by default
 
 ## What Is Off-Target
-- Weddings / Disney weddings / terms clearly outside category
 - Convention center / OCCC / large-venue terms
 - Generic cheap leads with no booking intent
 
