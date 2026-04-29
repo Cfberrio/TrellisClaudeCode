@@ -1,0 +1,110 @@
+{
+  "wave": "hormozi-wave1",
+  "purpose": "Realistic Trellis-flavored trigger prompts for the 8 first-wave Hormozi skills. Use with skill-creator's run_loop.py / run_eval.py to score description triggering accuracy. Each skill has should-trigger (positive) and should-not-trigger (near-miss negatives that pull toward sibling skills or generic plugin skills).",
+  "vault_root": "/Users/cberrio04/Documents/Trellis-Brain/Trellis-Brain/00-Trellis-Core/Strategy-Models/",
+  "notes": "Negatives are deliberately tricky — they share keywords with the target skill but actually belong to a sibling. A skill that triggers on these is leaking scope.",
+  "skills": {
+    "offers": {
+      "should_trigger": [
+        "we're rebuilding the DR youth-camp offer for the spring season — current registration page is converting at like 1.8% on cold paid traffic, can you walk me through a Grand Slam audit and tell me what's missing on dream outcome and risk reversal",
+        "I want to add a guarantee to the OEV booking offer. Right now we promise 'satisfaction guaranteed' which means nothing. Help me engineer something with teeth that won't tank margin",
+        "the CTS catering quote page just describes the package and the price. it has no bonus stack, no naming, nothing irresistible. rebuild this offer for me end-to-end",
+        "audit this offer text against the value equation and tell me which of the four levers is weakest: dream outcome, perceived likelihood, time delay, or effort/sacrifice"
+      ],
+      "should_not_trigger": [
+        "we need to design the full first-30-days journey for new DR families — attraction offer, upsell to franchise, downsell, continuity. what should the offer sequence look like (→ /money-models)",
+        "I want to raise prices on existing OEV transport contracts that have been frozen at 2023 rates — write me a price-raise rollout plan (→ /price-raise)",
+        "we have 800 warm leads on the CTS list and need to generate cash this week with a 7-day promo (→ /fast-cash)"
+      ]
+    },
+    "pricing": {
+      "should_trigger": [
+        "pricing is all over the place across our brands. I don't know if I should be talking philosophy, structure, or running a test. help me figure out which lever to pull first on DR camp pricing",
+        "general question on pricing for OEV — not sure where to start, can you route me",
+        "I want to do something about pricing this quarter but I'm not sure if it's posture, model, or just tactical tweaks"
+      ],
+      "should_not_trigger": [
+        "show me Hormozi's commodity-trap argument and why premium pricing is a virtuous cycle (→ /pricing-posture directly, not the router)",
+        "I have current paying customers on a $97/month plan and want to move them to $147 — write me the letter (→ /price-raise directly)",
+        "what's the right step size for a price test on the DR add-on — 10% or 25%? (→ /price-test directly)"
+      ]
+    },
+    "pricing-posture": {
+      "should_trigger": [
+        "I keep getting talked down on price during DR franchise discovery calls. starting to wonder if we're underpricing the whole thing — what's the case for going premium and holding the line",
+        "explain Hormozi's commodity trap to me. I think CTS catering is sliding into it because we keep matching competitor discounts on weddings",
+        "is there a real argument for pricing OEV transport above the market or are we just being arrogant — what's the virtuous-cycle logic"
+      ],
+      "should_not_trigger": [
+        "what specific tactic should I deploy this month to lift margin on existing OEV contracts — like a processing fee passthrough (→ /pricing-plays)",
+        "should the CTS pricing tiers be value-based or cost-plus, and how should the packaging look (→ /pricing-model)",
+        "we need to roll out a 30% increase to grandfathered DR families — what's the math and the letter (→ /price-raise)"
+      ]
+    },
+    "pricing-model": {
+      "should_trigger": [
+        "we're launching a new DR franchise tier next quarter and need to set the initial price structure — cost-plus, competitor-based, or value-based? what model fits youth sports licensing",
+        "audit the CTS catering pricing page architecture against Hormozi's 13 pricing rules — I think we're violating at least 3 of them",
+        "explain the profit-leverage thesis to me with numbers — why does a 1% price change matter so much more than a 1% cost change in our margin profile"
+      ],
+      "should_not_trigger": [
+        "I want to send a price-raise letter to existing DR families this month — help me draft it (→ /price-raise)",
+        "should I add a processing-fee passthrough to OEV bookings to lift margin this week (→ /pricing-plays)",
+        "design a 4-week cohort price test for the new CTS package — what step size and sample size (→ /price-test)"
+      ]
+    },
+    "pricing-plays": {
+      "should_trigger": [
+        "give me 3 instant-profit pricing tactics I can deploy on OEV new bookings this week — billing change, fee passthrough, anchor tweak, anything that doesn't require renegotiating with anyone",
+        "we want to pass through Stripe processing fees to CTS catering quotes going forward. is that one of Hormozi's plays and how do we frame it on the invoice",
+        "what's the 28-day billing trick and would it work on the DR youth-camp monthly recurring tier",
+        "annual CPI bump on new contracts only — quick pricing win, walk me through it"
+      ],
+      "should_not_trigger": [
+        "we need to apply a 15% price lift to ALL current OEV recurring contracts including grandfathered ones — what's the math and the letter (→ /price-raise; existing customers)",
+        "should premium pricing posture make sense for our DR franchise tier or are we overreaching (→ /pricing-posture)",
+        "design the cohort split and 30-day measurement plan for the price test (→ /price-test)"
+      ]
+    },
+    "price-test": {
+      "should_trigger": [
+        "set up a structured price test for the new CTS premium catering package — what step size from $4500 to $5500, how many quotes do I need, how long do I run it before calling it",
+        "I want to A/B-test two prices on the DR camp landing page — $497 vs $597. cadence, sample size, what's the minimum I need before I trust the result",
+        "how do I track Price × Conversion × Churn × LTV during a price test for OEV recurring transport",
+        "what's the operating loop for figuring out if my new price actually worked or I just got lucky on a small sample"
+      ],
+      "should_not_trigger": [
+        "we want to raise prices on existing CTS retainer clients and need the letter and rollout (→ /price-raise; existing customers, not a test)",
+        "should I be charging premium at all for OEV — is the posture defensible (→ /pricing-posture)",
+        "give me the 10 instant-profit pricing tactics from Hormozi (→ /pricing-plays)"
+      ]
+    },
+    "price-raise": {
+      "should_trigger": [
+        "we have 60 DR franchise locations on a grandfathered $1500/month rate from 2022 and we need to move them to $2200/month. write the RAISE letter and tell me what notice window to give",
+        "OEV has 12 corporate transport contracts that have been at the same rate for 3 years. how do I raise prices on them without losing the top-3 by revenue",
+        "draft a price-increase email for existing CTS catering retainer clients — I want grandfather logic for top tenure, lift for everyone else",
+        "what math do I need to run before raising prices on existing customers — what churn can the increase absorb"
+      ],
+      "should_not_trigger": [
+        "what should the initial pricing structure look like for the brand-new DR franchise tier launching in Q3 (→ /pricing-model; new offer, no existing customers)",
+        "I want to test whether $597 outperforms $497 on the DR camp page (→ /price-test; new-customer cohort test)",
+        "is premium pricing even defensible for OEV — give me the philosophy (→ /pricing-posture)"
+      ]
+    },
+    "branding": {
+      "should_trigger": [
+        "I'm not sure what Trellis Fields actually stands for as a brand. help me run the Hormozi pairing exercise — who are we, who do we polarize, what do we measurably stand for",
+        "audit the DR brand against Reach, Influence, and Direction — I think we have reach but no direction and the bouquet is getting muddled across CTS / OEV / Trellis",
+        "should we pivot the OEV brand or extend it — applying Hormozi's brand bouquet logic to the portfolio",
+        "what's our level of authority right now in the youth sports space and how do I move from category-known to first-named"
+      ],
+      "should_not_trigger": [
+        "help me pick the right ICP for the new DR franchise tier — who exactly should we target (→ /avatar)",
+        "set up a system to capture testimonials and UGC from CTS catering customers continuously (→ /marketing-machine)",
+        "what should we charge for the premium Trellis Fields offering and is the brand strong enough to support it (→ /pricing-posture)",
+        "write headline copy for the new CTS catering homepage hero (→ marketing-skills:copywriting, not branding strategy)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "wave": "hormozi-wave1",
+  "purpose": "Pressure-test batch — 30 realistic Trellis-flavored prompts. Run through normal sessions, observe which skill fires, log misfires using live-failure-log-template.md. Sanity check, not benchmark.",
+  "instructions": "Run prompts in any order across normal work sessions. Do NOT batch-run as automation. The point is to see how skills trigger in realistic conversational context, with normal IDE state and other skills available. Track results in failures-YYYY-MM.md.",
+  "expected_skill_legend": "primary skill that should fire | secondary acceptable handoff",
+  "batches": {
+    "offers": {
+      "count": 5,
+      "expected": "offers",
+      "prompts": [
+        "the new DR youth-camp registration page is converting at 1.8% on cold paid traffic. audit the offer end-to-end against Hormozi's Grand Slam definition and tell me which of the four components is weakest",
+        "we need to add a real guarantee to the OEV corporate transport booking — current 'satisfaction guaranteed' line is meaningless and not converting. engineer something with teeth that doesn't tank margin",
+        "CTS catering quote PDF just lists package + price. no bonus stack, no naming, no scarcity, nothing irresistible. rebuild this offer for me",
+        "I want to add a name to our DR coaching tier — right now it's just called 'Premium Tier' which is dead. apply the MAGIC formula and give me 3 candidate names",
+        "stress-test this Trellis Fields consulting offer against the value equation — Dream Outcome × Likelihood / Time Delay × Effort. which lever am I leaving on the table"
+      ]
+    },
+    "pricing_router": {
+      "count": 2,
+      "expected": "pricing",
+      "note": "Vague pricing intent — router should ask one disambiguating question, not load notes",
+      "prompts": [
+        "pricing across our brands feels off but I don't know if it's posture, structure, or just tactics. where do I even start with DR pricing this quarter",
+        "general help on pricing for OEV — not sure what I need yet"
+      ]
+    },
+    "pricing_posture": {
+      "count": 2,
+      "expected": "pricing-posture",
+      "prompts": [
+        "I keep getting talked down on price during DR franchise discovery calls. starting to think we're underpricing. what's Hormozi's case for holding premium and why does discounting break the virtuous cycle",
+        "is there an actual argument for pricing OEV transport above market or are we being arrogant — walk me through the commodity-trap logic"
+      ]
+    },
+    "pricing_model": {
+      "count": 2,
+      "expected": "pricing-model",
+      "prompts": [
+        "we're launching the new DR franchise tier in Q3 and need initial pricing structure. cost-plus, competitor-based, or value-based? what fits youth sports licensing and how should the tiers stack",
+        "audit the CTS catering pricing page architecture against Hormozi's 13 pricing rules — I'm pretty sure we're violating at least 3"
+      ]
+    },
+    "pricing_plays": {
+      "count": 2,
+      "expected": "pricing-plays",
+      "prompts": [
+        "give me 3 instant-profit pricing tactics I can deploy on OEV new bookings this week — billing change, fee passthrough, anchor tweak, anything that doesn't require renegotiating",
+        "we want to add Stripe processing-fee passthrough to CTS catering invoices going forward — is that one of Hormozi's plays and how do we frame it cleanly"
+      ]
+    },
+    "price_test": {
+      "count": 2,
+      "expected": "price-test",
+      "prompts": [
+        "set up a structured price test for the new CTS premium catering package — step size from $4500 to $5500, how many quotes do I need, how long until I trust the result",
+        "what step size should I use to A/B test $497 vs $597 on the DR camp landing page — and how do I track Price × Conv × Churn × LTV without overthinking it"
+      ]
+    },
+    "price_raise": {
+      "count": 2,
+      "expected": "price-raise",
+      "prompts": [
+        "we have 60 DR franchise locations grandfathered at $1500/month from 2022. need to move them to $2200. write the RAISE letter and tell me what notice window to give the top-10 by tenure",
+        "OEV has 12 corporate transport contracts frozen at 2023 rates. how do I raise prices on them without losing the top-3 by revenue — what math do I run first"
+      ]
+    },
+    "branding": {
+      "count": 5,
+      "expected": "branding",
+      "prompts": [
+        "I'm not sure what Trellis Fields actually stands for as a brand anymore. run the Hormozi pairing exercise — who are we, who do we polarize, what do we measurably stand for",
+        "audit the DR brand against Reach, Influence, and Direction — I think we have reach but no direction and the bouquet is muddled across CTS / OEV / Trellis Fields",
+        "should we pivot the OEV brand toward booking-tech positioning or extend it into a sister brand — apply Hormozi's brand bouquet logic",
+        "what's our current level of authority in the youth sports space and how do I move from category-known to first-named within 12 months",
+        "explain Hormozi's brand-economics argument — how does a strong brand pairing actually transfer into being able to charge premium"
+      ]
+    },
+    "near_miss_branding_vs_avatar": {
+      "count": 2,
+      "expected": "neither (or hand off honestly — /avatar doesn't exist yet in wave 1)",
+      "note": "/branding must NOT swallow these. Acceptable: model says 'this is avatar work, /avatar isn't built yet, here's the closest answer using Starving-Crowd + Avatar-Selection notes'",
+      "prompts": [
+        "help me pick the right ICP for the new DR franchise tier — who exactly should we target and how do I find them inside our current customer base",
+        "we need to nail down the avatar for OEV corporate bookings — decision-maker, pain points, where they hang out. is this a branding question or do I need something else"
+      ]
+    },
+    "near_miss_pricing_model_vs_price_test": {
+      "count": 2,
+      "expected": "should split cleanly — first → /pricing-model, second → /price-test",
+      "note": "Both mention 'pricing' and 'test' — model must distinguish 'choose a model' from 'run a test'",
+      "prompts": [
+        "I need to pick a pricing model for the new CTS retainer tier and decide how to package the value metric — should I be testing pricing first or pick the model and then test",
+        "I already picked value-based pricing for the DR coaching add-on. now I need to design the actual price test — what cohort, step size, how long to run it"
+      ]
+    },
+    "near_miss_pricing_plays_vs_price_raise": {
+      "count": 2,
+      "expected": "first → /pricing-plays (new customers only), second → /price-raise (existing customers)",
+      "note": "Most dangerous overlap — a 'tactic' becomes a 'raise' when it touches existing customers. /pricing-plays must escalate to /price-raise when existing customers are exposed.",
+      "prompts": [
+        "switching OEV new bookings from monthly to 28-day billing — quick play, only affects future contracts, no existing customers touched. walk me through the rollout",
+        "we want to pass through Stripe processing fees on ALL OEV contracts including the 12 grandfathered ones. is this a play or a raise — and what do I tell existing customers"
+      ]
+    },
+    "near_miss_offers_vs_money_models": {
+      "count": 2,
+      "expected": "first → /offers (single-offer audit), second → /money-models doesn't exist yet — /offers should hand off honestly",
+      "note": "/offers must NOT swallow money-model sequencing. Acceptable on second prompt: 'this is money-model territory, that skill isn't built yet, here's the closest answer using Money Model umbrella notes'",
+      "prompts": [
+        "audit the single CTS catering offer against the Grand Slam definition — I'm not asking about sequencing, just this one offer's strength",
+        "design the full first-30-days journey for new DR families — attraction offer, upsell to franchise, downsell, continuity. what should the offer sequence look like end-to-end"
+      ]
+    }
+  }
+}
