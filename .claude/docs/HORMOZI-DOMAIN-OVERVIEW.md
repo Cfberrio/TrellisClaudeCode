@@ -97,6 +97,11 @@ Domains: **tactical pricing plays, pricing models taxonomy, profit-leverage math
 
 Domains: **retention / churn reduction, customer onboarding, community design, customer-journey milestones**.
 
+### `15-Closing/` — playbook *Closing*
+7 notes. Objection-handling for the live sales call. Definition (3-bucket maybe model + Power thesis + Blame Onion: Circumstances/Other-People/Self) + 28 operating rules + All-Purpose closes (7 universal) + Circumstances closes (Time + Money 4-flavor) + Other-People closes (Decision-Makers 4-step + Bad-Experiences) + Self closes (Preferences + Rushed-Decisions + Guarantee Closes) + Training System (Gym Launch case + trained-vs-untrained operator economics + drill cadence).
+
+Domains: **objection handling, sales-call closing, sales training**.
+
 ### Not extracted
 - *$100M Leads* (folder slot `02-` reserved; not created). Affects routing for: lead-magnet design, Core Four channels, lead-gen mechanics. **No canonical home in vault yet.**
 
@@ -134,6 +139,8 @@ Routing by business problem, not by book title.
 | **Cancellation / save flow** | `14-Retention/Hormozi-Cancellation-Saves` | `03-100M-Money-Models/Hormozi-Upsell-Offers` (save-with-upsell tier mechanics) |
 | **Customer survey / feedback loop** | `14-Retention/Hormozi-Customer-Survey-ACA` | (none) |
 | **Customer journey design** | `14-Retention/Hormozi-Customer-Journey-Milestones` | `09-Lifetime-Value/Hormozi-Crazy-Eight` (cross-sell milestone); `12-Marketing-Machine` (testimonial milestone) |
+| **Sales closing / objection handling on the call** | `15-Closing` (full folder — Definition + Rules + 4 close libraries + Training) | `01-100M-Offers/Hormozi-Guarantees` (risk reversal at close); `01-100M-Offers/Hormozi-Value-Equation` (translation rule for money objections); `10-Lead-Nurture/Hormozi-BAMFAM` (re-book when decision-maker absent); `14-Retention/Hormozi-Cancellation-Saves` (objection-handling pattern) |
+| **Sales-team training / closing skill development** | `15-Closing/Hormozi-Closing-Training-System` | `10-Lead-Nurture/Hormozi-Lead-Nurture-Execution-Culture` |
 
 ---
 
@@ -290,6 +297,13 @@ When two skills could load the same concept, route to the canonical home, then o
 | Specialized: lifetime upgrades | `Strategy-Models/04-100M-Lost-Chapters/Hormozi-Continuity-Lifetime-Upgrades.md` |
 | Specialized: lifetime discounts | `Strategy-Models/04-100M-Lost-Chapters/Hormozi-Continuity-Lifetime-Discounts.md` |
 | Specialized: discount + fee | `Strategy-Models/04-100M-Lost-Chapters/Hormozi-Continuity-Discount-Plus-Fee.md` |
+| Closing definition (3-bucket maybe + Blame Onion + Power) | `Strategy-Models/15-Closing/Hormozi-Closing-Definition.md` |
+| Closing rules (28 operating rules) | `Strategy-Models/15-Closing/Hormozi-Closing-Rules.md` |
+| All-Purpose closes (7 universal closes) | `Strategy-Models/15-Closing/Hormozi-All-Purpose-Closes.md` |
+| Circumstances closes (Time + 4-flavor Money) | `Strategy-Models/15-Closing/Hormozi-Closing-Circumstances-Closes.md` |
+| Other-People closes (Decision-Makers + Bad-Experiences) | `Strategy-Models/15-Closing/Hormozi-Closing-Other-People-Closes.md` |
+| Self-blame closes (Preferences + Rushed + Guarantee) | `Strategy-Models/15-Closing/Hormozi-Closing-Self-Closes.md` |
+| Closing training system (operator economics + drill cadence) | `Strategy-Models/15-Closing/Hormozi-Closing-Training-System.md` |
 
 (All paths above relative to `00-Trellis-Core/Strategy-Models/` inside the Trellis-Brain Obsidian vault. Vault root is machine-specific — see [TEAM-SETUP-MCP.md](TEAM-SETUP-MCP.md).)
 
@@ -319,13 +333,13 @@ Offers (01) = single offer; Money Models (03) = sequence of offers. User intent 
 ### Risk 3 — `/hooks` overlap with `/ads`
 07-Hooks is canonical hook material. 08-GOATed-Ads has its own hook section (`Hook-By-Awareness`) but explicitly defers to 07. `/hooks` should default to 07; `/ads` should load 08 as primary, 07 as supporting layer. Mixing produces redundant context.
 
-### Risk 4 — `/sales` has no canonical home
-There is no Hormozi *Sales* book in this vault. Closest material:
-- `10-Lead-Nurture/Hormozi-Lead-Nurture-Speed` (5-outcome call decision tree, hot handoff)
-- `10-Lead-Nurture/Hormozi-BAMFAM` (book-meeting-from-meeting)
-- `01-100M-Offers/Hormozi-Bonuses` (1-on-1 vs. group bonus sequencing — closest to "closing")
-- `14-Retention/Hormozi-Cancellation-Saves` (vent-then-validate, objection-handling)
-A `/sales` skill must aggregate across these or be deferred until a Sales book is extracted.
+### Risk 4 — `/sales` overlap with `/offers`, `/lead-nurture`, `/retention`
+**Resolved by extraction of *Closing* into `15-Closing/`.** `/sales` now anchors to `15-Closing/` as canonical home (full folder: Definition, Rules, 4 close libraries, Training). Adjacent skills must NOT be invoked when the question is on-call objection handling:
+- `/offers` builds the offer that sales closes against — different layer.
+- `/lead-nurture` is pre-call (post-opt-in nurture, show-rate, BAMFAM) — different operating moment. BAMFAM is invoked from `/sales` only when re-booking is needed.
+- `/retention` cancellation-saves uses an adjacent objection pattern (vent-then-validate) but is post-purchase save — different operating moment.
+
+Cross-references: `/sales` may pull `01-100M-Offers/Hormozi-Guarantees` (risk reversal at close, used by Guarantee Closes section), `01-100M-Offers/Hormozi-Value-Equation` (value-too-low translation rule), `10-Lead-Nurture/Hormozi-BAMFAM` (re-book when decision-maker absent), and `14-Retention/Hormozi-Cancellation-Saves` (adjacent objection pattern). All as secondary, not canonical.
 
 ### Risk 5 — `/lead-gen` has no canonical home
 *$100M Leads* is not extracted. `/lead-gen` would route to substitutes (paid ads, fast cash, marketing machine) but cannot answer "Core Four" or lead-magnet-design questions. Build only after Leads is extracted, or scope tightly to "what we have."

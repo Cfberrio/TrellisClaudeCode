@@ -1,0 +1,128 @@
+{
+  "wave": "hormozi-wave2",
+  "purpose": "Trigger eval prompts for the 10 wave-2 Hormozi skills. Same shape as wave-1: realistic Trellis-flavored should-trigger prompts + near-miss should-not-trigger prompts that pull toward sibling skills. Feed into scripts/run_loop.py for description optimization.",
+  "vault_root_note": "All skills route to `00-Trellis-Core/Strategy-Models/` inside the Trellis-Brain Obsidian vault — see .claude/docs/TEAM-SETUP-MCP.md.",
+  "skills": {
+    "retention": {
+      "should_trigger": [
+        "DR youth-camp losing 35% of families after the first month — what's the activation point I should be driving them to and how do I build the onboarding sequence",
+        "build a cancellation save flow for OEV recurring transport — vent-then-validate, save-with-redo, save-with-upsell options",
+        "we need a customer survey for CTS catering churn — design the ACA exit survey and tell me what to do with the results",
+        "audit our DR retention against Hormozi's 9-lever Churn Checklist and tell me which lever is most broken"
+      ],
+      "should_not_trigger": [
+        "lift LTV across the customer base — what levers should I pull beyond churn (→ /ltv)",
+        "design the upsell offer that recurring customers see at month 2 (→ /money-models)",
+        "raise prices on existing OEV contracts — they're churning at the new rate (→ /price-raise; pricing question, not retention mechanism)"
+      ]
+    },
+    "avatar": {
+      "should_trigger": [
+        "we don't know who the highest-LTV DR family really is — survey existing customers and find the avatar inside our base",
+        "is the OEV corporate-transport market actually viable — score it against Starving Crowd's 4 indicators",
+        "should we niche down CTS catering to weddings only or stay broad — apply Hormozi's GMEP test"
+      ],
+      "should_not_trigger": [
+        "design the brand pairing for Trellis Fields once we know who we're for (→ /branding; brand strategy is downstream of avatar)",
+        "build a lead-nurture sequence once leads opt in (→ /lead-nurture; post-opt-in operations)",
+        "construct the Grand Slam offer that this avatar needs (→ /offers; offer construction)"
+      ]
+    },
+    "money-models": {
+      "should_trigger": [
+        "design the full first-30-days journey for new DR families — attraction, upsell to franchise tier, downsell, continuity. need the offer sequence and CFA math",
+        "OEV CAC is $480 and LTGP is $220 — we're losing money on every new customer. design a money model that gets us to break-even on day 30",
+        "build the upsell architecture for CTS catering — current attach rate is 8%, we want 35%. classic upsell or anchor upsell"
+      ],
+      "should_not_trigger": [
+        "audit the single CTS catering offer against the Grand Slam definition — just this one offer (→ /offers)",
+        "raise prices on existing DR franchise locations (→ /price-raise)",
+        "lift LTV via cost reduction — Lever 2 of Crazy Eight (→ /ltv)"
+      ]
+    },
+    "hooks": {
+      "should_trigger": [
+        "DR camp video ad first 3 seconds is dead — write me 5 hooks for parents using the curiosity format",
+        "show me Hormozi's 121-hook swipe library, I want to model the top 10 for the OEV booking landing page",
+        "fix the opener on our CTS catering reel — current line gets 23% retention at second 3 which sucks"
+      ],
+      "should_not_trigger": [
+        "build the full paid ad — hook, meat, CTA — for the DR camp Q3 launch (→ /ads; whole-ad construction)",
+        "map our DR ads against the Schwartz awareness continuum (→ /ads; paid-specific awareness work)",
+        "rewrite the homepage hero copy for Trellis Fields (→ marketing-skills:copywriting; long-form positioning, not opener mechanics)"
+      ]
+    },
+    "ads": {
+      "should_trigger": [
+        "produce 10 paid Meta ads for DR camp Q3 launch — 3 demo, 3 testimonial, 4 story format, all targeting solution-aware parents",
+        "OEV ads stopped scaling at $4k/day spend — diagnose whether it's hook fatigue or audience saturation",
+        "write the CTA layer for our CTS catering ads — current CTA is 'Learn More' and it's killing CTR"
+      ],
+      "should_not_trigger": [
+        "write me hooks for an organic Instagram reel about DR coaching philosophy (→ /hooks; organic, not paid-ad assembly)",
+        "build the testimonial-pipeline system that feeds new ad creative every week (→ /marketing-machine; UGC sourcing, not ad assembly)",
+        "design the lifecycle ads for new OEV bookings before/during/after their first ride (→ /marketing-machine; Lifecycle-Ads canonical there)"
+      ]
+    },
+    "marketing-machine": {
+      "should_trigger": [
+        "build a system that produces 8 fresh testimonial ads per month for DR without me having to ask each customer manually",
+        "run a testimonial competition for OEV corporate clients with bonus-unlock as the prize — design the competition mechanics and the 6-point script",
+        "scrape our CTS Instagram comments and DMs for organic winner posts that should become paid ads"
+      ],
+      "should_not_trigger": [
+        "produce 10 ad variations from this raw testimonial we already have (→ /ads; assembly, not sourcing)",
+        "what's our brand pairing? (→ /branding; brand strategy, not asset production)",
+        "extract a single testimonial from the top OEV client — just give me the script (→ load only the 6-point note, not the full system)"
+      ]
+    },
+    "ltv": {
+      "should_trigger": [
+        "we want to lift LTV by 40% over 12 months on the DR franchise tier — walk me through Hormozi's Crazy Eight and tell me which 2 levers will move the needle most",
+        "audit OEV fulfillment costs and prescribe Lever 2 cost-reduction moves",
+        "explain the LTGP / CAC / PPD math against our current numbers and tell me where we're bleeding"
+      ],
+      "should_not_trigger": [
+        "set up the structured price test for the new CTS premium tier — cohort, step size, duration (→ /price-test; operational test loop)",
+        "redesign our cancellation save flow — DR is bleeding at month 2 (→ /retention; Crazy Eight Lever 3 delegates to retention)",
+        "raise prices on existing OEV contracts (→ /price-raise; pricing rollout, not LTV strategy)"
+      ]
+    },
+    "lead-nurture": {
+      "should_trigger": [
+        "DR camp opt-ins are at 1,200/month but show rate to the discovery call is 18% — diagnose which of the 4 pillars is broken",
+        "build a 21-touch reminder cadence for OEV booking confirmations across SMS / email / WhatsApp",
+        "train the CTS sales team on BAMFAM — write me the script for booking the next call from the current call"
+      ],
+      "should_not_trigger": [
+        "we need to acquire more leads in the first place, not nurture them better (→ /lead-gen deferred — not currently a skill)",
+        "handle objections during the actual sales call when they say the price is too high (→ /sales deferred — not currently a skill)",
+        "reduce churn after they've already become customers (→ /retention; post-purchase, not pre-sale)"
+      ]
+    },
+    "fast-cash": {
+      "should_trigger": [
+        "DR needs $80k in the next 14 days — we have a warm list of 4,200 past camp families. design the 7-day Push-to-Consult sequence",
+        "run a quarterly Fast Cash promo on the OEV repeat-corporate list — 10x-the-10% rule applied to current $4500 retainer",
+        "is it OK to run a second Fast Cash this quarter? we did one in February — what's the cadence rule"
+      ],
+      "should_not_trigger": [
+        "build a brand-new Grand Slam offer for cold traffic (→ /offers; Fast Cash deploys an existing GSO, doesn't build one)",
+        "set up Meta paid ads to acquire new DR leads cold (→ /ads; cold acquisition, not warm-list promo)",
+        "raise prices on existing OEV contracts permanently (→ /price-raise; permanent change, not a 7-day promo)"
+      ]
+    },
+    "team": {
+      "should_trigger": [
+        "I need to hire a VA for OEV booking ops — apply Hormozi's Internal Core Four and Performance Diamond to the role",
+        "founder calendar is fragmented — 14 calls per day and zero deep work. apply Maker-vs-Manager and restructure",
+        "lead-getter hire for DR — what's the framework, where do I source, how do I assess"
+      ],
+      "should_not_trigger": [
+        "train the SDR team on lead-nurture execution culture — daily standup, accountability dashboards (→ /lead-nurture; sales-team specific)",
+        "design our compensation structure for the DR franchise managers (→ out of vault scope; general HR/comp)",
+        "diagnose the broader scaling bottleneck across all 4 brands (→ hormozi-business-scaling plugin if available; out of this vault's scope)"
+      ]
+    }
+  }
+}

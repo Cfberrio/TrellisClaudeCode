@@ -1,0 +1,56 @@
+{
+  "wave": "hormozi-wave3",
+  "purpose": "Trigger eval prompts for the /sales skill (anchored to 15-Closing/ canonical notes). Tests undertriggering, overtriggering, scope drift, wrong routing, and confusion with adjacent skills (/offers, /retention, /price-raise, /lead-nurture, /pricing).",
+  "vault_root_note": "Routes to `00-Trellis-Core/Strategy-Models/15-Closing/` inside the Trellis-Brain Obsidian vault. See .claude/docs/TEAM-SETUP-MCP.md.",
+  "skill": "sales",
+  "should_trigger": [
+    "DR camp closer is at 22% close rate on hot leads. The most common failure pattern is parents saying 'I need to talk to my husband' and never re-booking. Walk me through the 4-step decision-maker sequence and which closes to drill",
+    "OEV corporate transport sales calls keep dying when the prospect says 'send me a proposal and I'll get back to you.' Diagnose whether this is a closing failure or an offer-clarity failure, then prescribe the script",
+    "build a closing training program for the CTS catering sales team — daily drill cadence, what to record, which closes to memorize first vs. understand later",
+    "what's the verbatim Hormozi script for 'it's too expensive' when the prospect actually has the money but doesn't see the value yet — and how do I stack it with the Reason close and a guarantee close",
+    "the prospect said 'I've been burned before by other coaches' and the rep didn't know what to do. Give me Hormozi's exact response and explain why tone carries this close more than the words",
+    "draft the response to 'let me think about it' for our DR franchise discovery call — I want the Gameplan close walked through, plus the Decadere etymology close as a stack",
+    "we have a 30-day money-back guarantee on the OEV corporate plan but the closer never invokes it during the close. What's the right way to pair Hormozi's Both-Options-Risk-Free script with our existing guarantee",
+    "audit our CTS catering sales script against Hormozi's 28 closing rules — which rules are we violating and which 5-6 should we fix first"
+  ],
+  "should_not_trigger": [
+    "the DR youth-camp offer itself is weak — bonuses don't stack right, no guarantee, value equation is off. Rebuild the Grand Slam (→ /offers; offer construction, not closing)",
+    "show rate to OEV discovery calls is 38% — leads opt in but don't show. Fix the lead-nurture cadence (→ /lead-nurture; pre-call nurture, not on-call closing)",
+    "we're losing CTS retainer customers in months 4-6 — design the cancellation save flow with vent-then-validate (→ /retention; post-purchase save, different operating moment)",
+    "pick the right pricing model for the new DR franchise tier — value-based vs cost-plus, packaging logic (→ /pricing-model; pricing structure, not closing)",
+    "we have 60 grandfathered DR franchise locations at the old rate and need to roll out a 47% raise — write the RAISE letter (→ /price-raise; existing-customer rollout, not live-call objection handling)",
+    "we need to acquire more leads via paid ads and lead magnets — set up the Core Four channels (→ /lead-gen deferred — 02-100M-Leads not extracted yet; closest substitutes are /ads + /marketing-machine + /fast-cash)",
+    "what compensation structure should we put the closers on (→ out of vault scope; general HR/comp; closing skill is /sales but pay structure isn't)"
+  ],
+  "near_miss_collisions": {
+    "sales_vs_offers": {
+      "note": "Most dangerous collision. 'My sales aren't working' is most often an OFFER problem disguised as a closing problem. /sales must escalate to /offers when the underlying offer's value is weak.",
+      "should_trigger_sales": "the offer is strong (proven testimonials, clear value) but the closer can't handle 'I want to think about it' — what's the script",
+      "should_trigger_offers": "the offer itself has no real bonus stack, no guarantee, vague dream outcome — closing won't fix this, the offer needs rebuilding"
+    },
+    "sales_vs_retention": {
+      "note": "Both involve objection handling. /sales = pre-purchase, on-call. /retention/Cancellation-Saves = post-purchase save flow.",
+      "should_trigger_sales": "the prospect on a discovery call says 'I'm not sure this is for me' — handle the objection",
+      "should_trigger_retention": "an existing customer just clicked the cancel button — what's the save flow"
+    },
+    "sales_vs_price_raise": {
+      "note": "Both involve price objections. /sales = handling 'too expensive' from a NEW prospect on a sales call. /price-raise = rolling out a price increase to EXISTING customers via a letter.",
+      "should_trigger_sales": "new lead on a discovery call says 'that's a lot of money' — give me the close",
+      "should_trigger_price_raise": "we have 200 existing customers paying $97/mo and want to move them to $147/mo — write the rollout"
+    },
+    "sales_vs_lead_nurture": {
+      "note": "Sales = on-call (post-show, pre-purchase). Lead-nurture = pre-call (post-opt-in, pre-show). BAMFAM is canonical in /lead-nurture but invoked from /sales when re-booking is needed.",
+      "should_trigger_sales": "they showed up to the call but the decision-maker isn't with them — close anyway or re-book?",
+      "should_trigger_lead_nurture": "leads opt in but never show — design the reminder cadence and the 4 nurture pillars"
+    }
+  },
+  "production_readiness": {
+    "verdict": "production-ready",
+    "rationale": "Description 965 chars (under 1024 limit). Body 69 lines (lean, well under 500-line guidance). All 7 canonical 15-Closing notes referenced explicitly. Branch-routing logic mirrors the Blame Onion structure of the source playbook — model retrieves only the matching close library, not all 4. Do-not-use list explicitly handles 5 highest-risk collisions (offers, lead-nurture, retention, pricing, lead-gen). Output expectations include the load-bearing diagnostic move ('confirm STAR first; if broken, escalate upstream — closing won't fix an unqualified-prospect problem'). Verbatim-preservation rule prevents the model from paraphrasing canonical scripts where exact wording is the deliverable.",
+    "open_risks": [
+      "Highest-risk collision (sales ↔ offers) is mitigated in the do-not-use clause but cannot be fully prevented at description level — the model must diagnose during the conversation. Watch first 5-10 live invocations.",
+      "/lead-gen deferred status means 'we need more leads' questions could mis-route to /sales by mistake. Mitigated by explicit 'Lead acquisition → /lead-gen (deferred)' clause.",
+      "Closing-Training-System note is a different operating layer (operator running the org vs. closer running the call). Risk that model loads it on tactical questions. Mitigated by 'Load Training-System only when user is asking about training the team' rule."
+    ]
+  }
+}

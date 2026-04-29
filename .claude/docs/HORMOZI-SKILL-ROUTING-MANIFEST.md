@@ -6,7 +6,7 @@ All paths rooted at the `00-Trellis-Core/Strategy-Models/` folder inside the Tre
 
 For domain context and overlap analysis, see `HORMOZI-DOMAIN-OVERVIEW.md`.
 
-**Build order (recommended).** First wave: `/offers`, `/pricing`, `/retention`, `/branding`, `/hooks`, `/ads`. Second wave: `/money-models`, `/ltv`, `/lead-nurture`, `/marketing-machine`, `/fast-cash`, `/avatar`. Deferred: `/sales`, `/lead-gen` (no canonical home in vault yet — see context warnings).
+**Build order (recommended).** First wave: `/offers`, `/pricing`, `/retention`, `/branding`, `/hooks`, `/ads`. Second wave: `/money-models`, `/ltv`, `/lead-nurture`, `/marketing-machine`, `/fast-cash`, `/avatar`. Third wave: `/sales` (anchored to `15-Closing/`, extracted 2026-04-29). Deferred: `/lead-gen` (no canonical home in vault yet — `02-100M-Leads/` slot reserved but not populated).
 
 ---
 
@@ -772,24 +772,64 @@ Hire and manage. Specifically: hire as customer-acquisition; founder calendar di
 
 ---
 
-## /sales (DEFERRED — partial canonical only)
+## /sales
 
 ### Purpose
-Close deals on the call. Objection handling. Closing mechanics.
+Close deals on the live sales call. Objection handling. Closing mechanics. Anchored to the *Closing* playbook (`15-Closing/`).
 
-### Status
-**No Hormozi sales/closing book extracted yet.** Closest material in vault:
+### Use when
+- "Why aren't we closing?"
+- "Train my sales team to handle objections."
+- "How do I respond to '[specific objection — too expensive / let me think about it / I need to talk to my spouse / I've been burned before / etc.]'?"
+- "Build the close library for our sales script."
+- "Diagnose why our close rate is X% and what to do about it."
+- "What's the right way to deploy guarantees during the close?"
+- BAMFAM / re-book questions (canonical home in `/lead-nurture`, but invoked from sales when a decision-maker is missing).
 
-### Available material (incomplete coverage)
-- `Strategy-Models/10-Lead-Nurture/Hormozi-Lead-Nurture-Speed.md` — 5-outcome call decision tree.
-- `Strategy-Models/10-Lead-Nurture/Hormozi-BAMFAM.md` — book-meeting-from-meeting.
-- `Strategy-Models/01-100M-Offers/Hormozi-Bonuses.md` — 1-on-1 vs. group sales sequencing of bonuses (closest to "closing pattern").
-- `Strategy-Models/14-Retention/Hormozi-Cancellation-Saves.md` — vent-then-validate, save-with-redo, save-with-upsell — applies to objection handling broadly.
-- `Strategy-Models/01-100M-Offers/Hormozi-Guarantees.md` — risk reversal at close.
-- `Strategy-Models/04-100M-Lost-Chapters/Hormozi-Offer-Stacking.md` — sales choreography across multiple offers.
+### Do not use when
+- Building the offer being sold → `/offers`.
+- Pre-call lead nurture (show rate, response speed, opt-in cadence) → `/lead-nurture`.
+- Post-purchase cancellation save / vent-then-validate → `/retention` (the cancellation-saves note is canonical there).
+- Setting initial pricing / pricing structure on a new offer → `/pricing-model` or `/pricing`.
+- Existing-customer price raise rollout (RAISE letter) → `/price-raise`.
+- Acquiring more leads in the first place → `/lead-gen` (deferred — see below).
 
-### Recommendation
-**Do not build `/sales` as a top-level skill yet.** The vault does not have a canonical closing/objection-handling source. Premature scaffolding will mis-route. Defer until a Hormozi sales book is extracted, or scope to specific sub-skills (`/objection-handling`, `/bamfam`, `/sales-call-tree`) that route to the existing material honestly.
+### Primary notes
+- `Strategy-Models/15-Closing/Hormozi-Closing-Definition.md` — foundation: 3-bucket maybe model + Power thesis + Blame Onion + ethics + STAR qualification.
+- `Strategy-Models/15-Closing/Hormozi-Closing-Rules.md` — 28 operating rules.
+- `Strategy-Models/15-Closing/Hormozi-All-Purpose-Closes.md` — 7 universal closes (80/20 library).
+- Whichever blame-branch close library matches the user's named obstacle:
+  - `Strategy-Models/15-Closing/Hormozi-Closing-Circumstances-Closes.md` — Time + Money (4 flavors).
+  - `Strategy-Models/15-Closing/Hormozi-Closing-Other-People-Closes.md` — Decision-Makers + Bad-Experiences.
+  - `Strategy-Models/15-Closing/Hormozi-Closing-Self-Closes.md` — Preferences + Rushed-Decisions + Guarantee Closes.
+
+### Secondary notes
+- `Strategy-Models/15-Closing/Hormozi-Closing-Training-System.md` — for "train the team" / "build a closing program" / drill cadence questions.
+- `Strategy-Models/01-100M-Offers/Hormozi-Guarantees.md` — risk reversal underlying the Guarantee Closes section.
+- `Strategy-Models/01-100M-Offers/Hormozi-Value-Equation.md` — translation rule for money objections ("value too low ≠ price too high").
+
+### Optional support notes
+- `Strategy-Models/10-Lead-Nurture/Hormozi-BAMFAM.md` — invoked when a close requires re-booking with a missing decision-maker.
+- `Strategy-Models/14-Retention/Hormozi-Cancellation-Saves.md` — adjacent objection-handling pattern (vent-then-validate); load only when user is composing a save flow that resembles a close.
+- `Strategy-Models/01-100M-Offers/Hormozi-Bonuses.md` — 1-on-1 vs. group bonus sequencing inside the close.
+- `Strategy-Models/04-100M-Lost-Chapters/Hormozi-Offer-Stacking.md` — sales choreography across multiple offers within the same conversation.
+
+### Canonical-home logic
+15-Closing is canonical for live-call objection handling and closing mechanics. Guarantees / Value Equation / Bonuses canonical in `01-100M-Offers/`. BAMFAM canonical in `10-Lead-Nurture/`. Cancellation-Saves canonical in `14-Retention/`. /sales links out, never duplicates.
+
+### Retrieval order
+1. Closing-Definition (foundation lens — load first).
+2. Closing-Rules (operator-character constraints — load second).
+3. All-Purpose-Closes (7 universal closes — load whenever the obstacle is unclear or as the opening layer).
+4. Whichever blame-branch close library matches the user's named obstacle.
+5. Closing-Training-System if the user is asking about training the team or building a closing program (operator-side question, not script-deployment).
+6. Cross-skill anchors (`/offers` Guarantees, `/lead-nurture` BAMFAM, `/retention` Cancellation-Saves) only when the conversation explicitly bridges into them.
+
+### Context warnings
+- Do not load all 4 close libraries by default. Branch-specific. Route by named obstacle.
+- Do not load Training-System for tactical close questions — that's a different operating layer (operator running the org, not closer running the call).
+- Do not pull `/lead-nurture` Lead-Nurture-Execution-Culture into `/sales` by default. They are adjacent (both about sales-team operations) but Execution-Culture is canonical in 10-Lead-Nurture and serves a different operating moment (cadence/dashboards/accountability, not on-call objection handling).
+- Do not collapse `/sales` with `/offers`. /offers builds the thing being sold; /sales handles objections during the act of selling it. Operators conflate these constantly; the manifest does not.
 
 ---
 
@@ -830,5 +870,5 @@ Generate leads. Core Four channels. Lead magnet design.
 | `/onboarding` | 3 | could fold into `/retention` | `14-Retention/` |
 | `/promotion-architecture` | 3 | could fold into `/offers` | `04-100M-Lost-Chapters/` |
 | `/team` | 3 | small standalone | `04-100M-Lost-Chapters/` |
-| `/sales` | DEFERRED | — | no canonical home |
+| `/sales` | 3 | single skill | `15-Closing/` |
 | `/lead-gen` | DEFERRED | — | no canonical home |
