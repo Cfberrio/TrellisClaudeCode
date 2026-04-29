@@ -1,7 +1,0 @@
-conversion_action.resource_name,conversion_action.status,conversion_action.type_,conversion_action.category,conversion_action.value_settings.default_value,conversion_action.value_settings.always_use_default_value,conversion_action.counting_type,conversion_action.id,conversion_action.name,conversion_action.include_in_conversions_metric
-customers/3123559470/conversionActions/7547447414,2,2,11,1.0,True,3,7547447414,Calls from ads,True
-customers/3123559470/conversionActions/7539701023,2,28,16,1.0,True,3,7539701023,Local actions - Directions,False
-customers/3123559470/conversionActions/7539848331,2,28,19,1.0,True,3,7539848331,Local actions - Other engagements,False
-customers/3123559470/conversionActions/7539702226,2,28,3,1.0,True,3,7539702226,Local actions - Website visits,False
-customers/3123559470/conversionActions/7535579020,2,40,4,1.0,False,3,7535579020,Purchase,True
-customers/3123559470/conversionActions/7535578285,4,41,4,1.0,False,3,7535578285,orlandoeventvenue.org (web) purchase,False

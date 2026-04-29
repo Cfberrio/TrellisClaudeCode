@@ -1,2 +1,0 @@
-id,name,status,optimization_goal,billing_event,daily_budget,lifetime_budget,targeting,campaign_id
-120243159895740652,New Traffic Ad Set,ACTIVE,LANDING_PAGE_VIEWS,IMPRESSIONS,,,"{""age_max"": 65, ""age_min"": 18, ""age_range"": [28, 40], ""custom_audiences"": [{""id"": ""120243159885200652"", ""name"": ""DR HISTORIC""}], ""brand_safety_content_filter_levels"": [""FACEBOOK_RELAXED"", ""AN_RELAXED""], ""targeting_automation"": {""advantage_audience"": 1}}",120243159895720652

@@ -1,8 +1,67 @@
+# --- Local Claude settings (never commit) ---
+.claude/settings.local.json
+
+# --- Secrets / env ---
 .env
-.venv/
+.env.local
+**/.env
+!**/.env.example
+
+# --- OS / IDE ---
 **/.DS_Store
 .cursor/
 .playwright-mcp/
+.vscode/
+*.swp
+
+# --- Python ---
+.venv/
+**/.venv/
 __pycache__/
+**/__pycache__/
 *.pyc
 .pytest_cache/
+
+# --- Node ---
+node_modules/
+**/node_modules/
+# Repo-root package-lock is a stub; ignore it but keep the remotion lockfile tracked
+/package-lock.json
+
+# --- Copyrighted source material (Hormozi books) ---
+hormozi-books/
+
+# --- Remotion: large binary / generated dirs ---
+remotion/whisper.cpp/
+remotion/public/
+remotion/TESTDRVIDEO/
+remotion/out/
+
+# --- Raw business data (client metrics, PII) ---
+# Keep .gitkeep markers so directory shape is preserved.
+data/raw/*.csv
+data/raw/*.json
+data/raw/*.xls
+data/raw/*.xlsx
+data/raw/*.txt
+
+domains/**/data/raw/*.csv
+domains/**/data/raw/*.json
+domains/**/data/raw/*.xls
+domains/**/data/raw/*.xlsx
+domains/**/data/raw/*.txt
+domains/**/data/raw/**/*.csv
+domains/**/data/raw/**/*.json
+domains/**/data/raw/**/*.xls
+domains/**/data/raw/**/*.xlsx
+domains/**/data/raw/**/*.txt
+
+# School-outreach derived files contain PII — exclude processed/output detail
+domains/ops/school-outreach/**/data/processed/
+domains/ops/school-outreach/**/output/fase-1/*.csv
+domains/ops/school-outreach/**/output/fase-2/*.csv
+domains/ops/school-outreach/**/archive/
+
+# Always allow the gitkeep stubs and example envs back in
+!**/.gitkeep
+!**/.env.example
