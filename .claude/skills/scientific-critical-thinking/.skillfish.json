@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "scientific-critical-thinking",
+  "owner": "pur3v4d3r",
+  "repo": "pur3-pkb-codebase",
+  "path": ".claude/skills/__scientific-skills/scientific-critical-thinking",
+  "branch": "main",
+  "sha": "131ff76f5a82688326c22f5da7d3addd075ffd93",
+  "source": "manual"
+}
